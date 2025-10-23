@@ -51,6 +51,8 @@ const App: React.FC = () => {
             `[搜索] 正在检索关于 "${manufacturer}" 所在地的监管政策...`,
             `[分析] 正在评估当地政府对企业的依赖程度...`,
             `[搜索] 正在查找 "${manufacturer}" 过往的产品质量安全记录...`,
+            `[搜索] 正在检索相关的临床研究文献与监管机构(NMPA, FDA)意见...`,
+            `[分析] 正在分析文献中的疗效、安全性数据及监管结论...`,
             `[验证] 正在进行多源信息交叉验证，确保数据准确性...`,
             `[生成] 数据分析完成，正在生成最终评估报告...`
         ];
@@ -61,7 +63,7 @@ const App: React.FC = () => {
         // Animate the feed messages while the API call is in flight
         for (const message of feedMessages) {
             setProgressFeed(prev => [...prev, message]);
-            await sleep(800);
+            await sleep(900);
         }
 
         // Wait for the API call to finish
@@ -81,7 +83,7 @@ const App: React.FC = () => {
             await sleep(250);
         }
         
-        await sleep(1500); // Give user time to read sources
+        await sleep(1800); // Give user time to read sources
 
         setResult(evaluation);
 

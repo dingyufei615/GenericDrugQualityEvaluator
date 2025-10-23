@@ -17,6 +17,7 @@ export interface EvaluationResult {
     localDependency: ScoreComponent;
     regulatoryEnvironment: ScoreComponent;
     qualityHistory: ScoreComponent;
+    scientificEvidence: ScoreComponent;
   };
   sources: GroundingSource[];
 }

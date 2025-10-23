@@ -56,6 +56,9 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ result }) => {
         <ScoreCard title="当地依赖度" score={scores.localDependency.score} reasoning={scores.localDependency.reasoning} />
         <ScoreCard title="监管环境" score={scores.regulatoryEnvironment.score} reasoning={scores.regulatoryEnvironment.reasoning} />
         <ScoreCard title="企业质量历史" score={scores.qualityHistory.score} reasoning={scores.qualityHistory.reasoning} />
+        <div className="md:col-span-2">
+            <ScoreCard title="科学文献与监管意见" score={scores.scientificEvidence.score} reasoning={scores.scientificEvidence.reasoning} />
+        </div>
       </div>
 
       <div>
