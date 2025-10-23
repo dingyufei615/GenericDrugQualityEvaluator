@@ -1,7 +1,7 @@
 
 import React from 'react';
-import type { EvaluationResult } from '../types';
-import ScoreCard from './ScoreCard';
+import type { EvaluationResult } from '../types.ts';
+import ScoreCard from './ScoreCard.tsx';
 
 interface ResultsDisplayProps {
   result: EvaluationResult;

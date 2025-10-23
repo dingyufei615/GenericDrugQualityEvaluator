@@ -1,14 +1,14 @@
 
 import React, { useState, useCallback } from 'react';
-import type { EvaluationResult } from './types';
-import { evaluateDrugQuality } from './services/geminiService';
-import Settings from './components/Settings';
-import InputForm from './components/InputForm';
-import ResultsDisplay from './components/ResultsDisplay';
-import ProgressFeed from './components/ProgressFeed';
-import ErrorDisplay from './components/ErrorDisplay';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import type { EvaluationResult } from './types.ts';
+import { evaluateDrugQuality } from './services/geminiService.ts';
+import Settings from './components/Settings.tsx';
+import InputForm from './components/InputForm.tsx';
+import ResultsDisplay from './components/ResultsDisplay.tsx';
+import ProgressFeed from './components/ProgressFeed.tsx';
+import ErrorDisplay from './components/ErrorDisplay.tsx';
+import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   const [model, setModel] = useState<string>('gemini-2.5-flash');
