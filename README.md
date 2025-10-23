@@ -8,7 +8,7 @@
 
 ## 运行效果截图
 
-![仿制药质量评估器运行截图](https://storage.googleapis.com/static.aistudio.google.com/promptGallery/c1e30925-5f93-4e42-9923-34e8979b009e.png)
+![仿制药质量评估器运行截图](image.png)
 
 ## ✨ 核心特性
 
